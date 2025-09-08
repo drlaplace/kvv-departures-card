@@ -1,12 +1,13 @@
 # 🚋 KVV Departures Card
 
-Eine Home Assistant Lovelace-Karte, um die nächsten Abfahrten der **KVV** anzuzeigen.
+Eine Home Assistant Lovelace-Karte, um die nächsten Abfahrten der **KVV-Departure-Monitor** Integration anzuzeigen.
+
 
 ## Features
 - Anzeige von bis zu **10 Abfahrten**
 - **Linienfarben** automatisch erkannt
-- Blinkanzeige für Echtzeitdaten
 - Kompatibel mit HACS
+
 
 ## Installation
 1. Lade die ZIP-Datei herunter
