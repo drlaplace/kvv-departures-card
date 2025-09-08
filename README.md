@@ -24,7 +24,7 @@ um die Abfahrten der **KVV Departure Monitor** Integration optisch ansprechend d
 2. Füge dein Repository hinzu:
 
    ```
-   https://github.com/dr_laplace/kvv-departures-card
+   https://github.com/drlaplace/kvv-departures-card
    ```
 3. HACS durchsuchen und download
 
