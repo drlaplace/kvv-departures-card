@@ -1,0 +1,12 @@
+{
+  "manifest_version": 1,
+  "name": "KVV Departures Card",
+  "version": "1.0.0",
+  "homeassistant": "2024.5.0",
+  "resources": [
+    {
+      "type": "module",
+      "url": "/hacsfiles/kvv-departures-card/kvv-departures-card.js"
+    }
+  ]
+}
