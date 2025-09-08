@@ -1,6 +1,6 @@
 {
   "name": "KVV Departures Card",
-  "filename": "kvv-departures-card.js",
+  "filename": "dist/kvv-departures-card.js",
   "render_readme": true,
   "homeassistant": "2024.5.0"
 }
