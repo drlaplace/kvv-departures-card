@@ -31,7 +31,7 @@ class KVVDeparturesCard extends HTMLElement {
     }
 
     const departures = entity.attributes.abfahrten || [];
-    const stationName = entity.attributes.station_name || "Unbekannt";
+    const stationName = entity.attributes.stop_name || "Unbekannt";
 
     this.shadowRoot.innerHTML = `
       <style>
