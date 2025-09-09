@@ -4,6 +4,9 @@
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Lovelace%20Card-blue)
 ![Version](https://img.shields.io/github/v/tag/<dein-user>/kvv-departures-card?label=Release)
 
+[![Deutsch](https://img.shields.io/badge/Sprache-Deutsch-blue)](README.md)
+[![English](https://img.shields.io/badge/Language-English-green)](README_EN.md)
+
 Die **KVV Departures Card** ist eine benutzerdefinierte Lovelace-Karte für Home Assistant,  
 um die Abfahrten der **KVV Departure Monitor** Integration optisch ansprechend darzustellen.  
 
