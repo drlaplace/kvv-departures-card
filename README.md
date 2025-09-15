@@ -25,7 +25,7 @@ um die Abfahrten der **KVV Departure Monitor** Integration optisch ansprechend d
 ## **Installation über HACS**
 1. **HACS öffnen**
 2. KVV Departure Card suchen und download
-3. Browser refresh
+3. Browser reload
 
 ## **Manuelle Installation**
 Falls du HACS nicht verwenden möchtest:
