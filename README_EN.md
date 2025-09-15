@@ -25,14 +25,9 @@ to visually display departures from the **KVV Departure Monitor** integration in
 ---
 
 ## **Installation via HACS**
-1. Open **HACS** → **Frontend** → ⚙️ → **Add custom repository**
-2. Add your repository URL:
-
-   ```
-   https://github.com/<your-user>/kvv-departures-card
-   ```
-
-3. Search in HACS → Install → Reload dashboard
+1. **open HACS**
+2. serch KVV Departure Card and download
+3. Browser reload
 
 ---
 
@@ -54,6 +49,7 @@ If you prefer not to use HACS:
 ---
 
 ## **Configuration**
+1. **Dashboard**->**insert card**->**manuell**->   
 Example Lovelace YAML setup:
 ```yaml
 type: custom:kvv-departures-card
