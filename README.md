@@ -23,13 +23,9 @@ um die Abfahrten der **KVV Departure Monitor** Integration optisch ansprechend d
 ---
 
 ## **Installation über HACS**
-1. **HACS öffnen** → **Frontend** → ⚙️ → **Benutzerdefiniertes Repository hinzufügen**
-2. Füge dein Repository hinzu:
-
-   ```
-   https://github.com/drlaplace/kvv-departures-card
-   ```
-3. HACS durchsuchen und download
+1. **HACS öffnen**
+2. KVV Departure Card suchen und download
+3. Browser refresh
 
 ## **Manuelle Installation**
 Falls du HACS nicht verwenden möchtest:
@@ -39,6 +35,7 @@ Falls du HACS nicht verwenden möchtest:
    /config/www/kvv-departures-card/
 
 ## Konfiguration
+1. **Dashboard bearbeiten**->**Karte hinzufügen**->**Manuell**->   
 ```yaml
 type: custom:kvv-departures-card
 entity: sensor.kvv_abfahrten_berghausen_baden_hummelberg
