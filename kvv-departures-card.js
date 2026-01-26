@@ -33,7 +33,10 @@ class KVVDeparturesCard extends HTMLElement {
 const stationName = entity.attributes.station_name || "Unbekannt";
 const departures = entity.attributes.abfahrten || [];
 const title = this.config.title || `Abfahrten an ${stationName}`;
-
+const maxItems =
+  Number.isInteger(this.config.max_items) && this.config.max_items > 0
+    ? this.config.max_items
+    : 10;
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -88,7 +91,7 @@ const title = this.config.title || `Abfahrten an ${stationName}`;
       <ha-card class="kvv-card" header="${title}">
         ${departures.length === 0
           ? "<div>Keine Abfahrten verfügbar</div>"
-          : departures.slice(0, 10).map(dep => {
+          : departures.slice(0, maxItems).map(dep => {
               const bgColor = this.colors[dep.line] || "#6D4C41";
               const realtimeClass = dep.realtime ? "realtime" : "";
               return `
