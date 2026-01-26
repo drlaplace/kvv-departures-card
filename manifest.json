@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
   "name": "KVV Departures Card",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "homeassistant": "2024.5.0",
   "resources": [
     {

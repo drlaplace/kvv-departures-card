@@ -54,6 +54,7 @@ Example Lovelace YAML setup:
 ```yaml
 type: custom:kvv-departures-card
 entity: sensor.kvv_abfahrten_berghausen_baden_hummelberg
+title: Hummelberg
 ```
 
 ---

@@ -39,6 +39,7 @@ Falls du HACS nicht verwenden möchtest:
 ```yaml
 type: custom:kvv-departures-card
 entity: sensor.kvv_abfahrten_berghausen_baden_hummelberg
+title: Hummelberg
 ```
 
 ## Lizenz

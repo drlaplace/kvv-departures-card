@@ -30,8 +30,10 @@ class KVVDeparturesCard extends HTMLElement {
       return;
     }
 
-    const departures = entity.attributes.abfahrten || [];
-    const stationName = entity.attributes.station_name || "Unbekannt";
+const stationName = entity.attributes.station_name || "Unbekannt";
+const departures = entity.attributes.abfahrten || [];
+const title = this.config.title || `Abfahrten an ${stationName}`;
+
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -83,24 +85,22 @@ class KVVDeparturesCard extends HTMLElement {
         }
       </style>
 
-      <ha-card class="kvv-card">
-        <div class="kvv-title">Abfahrten an ${stationName}</div>
+      <ha-card class="kvv-card" header="${title}">
         ${departures.length === 0
           ? "<div>Keine Abfahrten verfügbar</div>"
-          : departures
-              .slice(0, 10)
-              .map(dep => {
-                const bgColor = this.colors[dep.line] || "#6D4C41";
-                const realtimeClass = dep.realtime ? "realtime" : "";
-                return `
-                  <div class="departure-row">
-                    <div class="line" style="background-color: ${bgColor};">${dep.line}</div>
-                    <div class="direction">${dep.direction}</div>
-                    <div class="countdown ${realtimeClass}">${dep.countdown} Min</div>
+          : departures.slice(0, 10).map(dep => {
+              const bgColor = this.colors[dep.line] || "#6D4C41";
+              const realtimeClass = dep.realtime ? "realtime" : "";
+              return `
+                <div class="departure-row">
+                  <div class="line" style="background-color:${bgColor};">${dep.line}</div>
+                  <div class="direction">${dep.direction}</div>
+                  <div class="countdown ${realtimeClass}">
+                    ${dep.countdown} Min
                   </div>
-                `;
-              })
-              .join("")}
+                </div>
+              `;
+            }).join("")}
       </ha-card>
     `;
   }
