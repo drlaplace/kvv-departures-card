@@ -33,6 +33,7 @@ class KVVDeparturesCard extends HTMLElement {
 const stationName = entity.attributes.station_name || "Unbekannt";
 const departures = entity.attributes.abfahrten || [];
 const title = this.config.title || `Abfahrten an ${stationName}`;
+const showTitle = this.config.show_title !== false;
 const maxItems =
   Number.isInteger(this.config.max_items) && this.config.max_items > 0
     ? this.config.max_items
@@ -88,7 +89,7 @@ const maxItems =
         }
       </style>
 
-      <ha-card class="kvv-card" header="${title}">
+      <ha-card class="kvv-card"${showTitle ? ` header="${title}"` : ""}>
         ${departures.length === 0
           ? "<div>Keine Abfahrten verfügbar</div>"
           : departures.slice(0, maxItems).map(dep => {
