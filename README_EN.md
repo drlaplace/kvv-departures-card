@@ -19,6 +19,7 @@ to visually display departures from the **KVV Departure Monitor** integration in
 ✅ Displays line, destination, countdown & real-time status  
 ✅ Dynamic colors per line (e.g. S-Bahn, tram, bus)  
 ✅ Configurable maximum number of departures  
+✅ Card title can be completely hidden
 ✅ Fully compatible with the **KVV Departure Monitor** integration  
 ✅ Supports **HACS** and **manual installation**
 
@@ -56,6 +57,7 @@ type: custom:kvv-departures-card
 entity: sensor.kvv_abfahrten_berghausen_baden_hummelberg
 title: Hummelberg    #optional
 max_items: 9         #optional standard 10
+show_title: false    #optional, completely hides the card title
 ```
 
 ---

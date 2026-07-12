@@ -17,6 +17,7 @@ um die Abfahrten der **KVV Departure Monitor** Integration optisch ansprechend d
 ✅ Anzeige von Linien, Ziel, Countdown & Echtzeitstatus  
 ✅ Dynamische Farben je Linie (z. B. S-Bahn, Bus, Tram)  
 ✅ Individuell konfigurierbare maximale Anzahl von Abfahrten  
+✅ Überschrift optional komplett ausblendbar
 ✅ Kompatibel mit der **KVV Departure Monitor** Integration  
 ✅ Unterstützung für **HACS** und **manuelle Installation**
 
@@ -41,6 +42,7 @@ type: custom:kvv-departures-card
 entity: sensor.kvv_abfahrten_berghausen_baden_hummelberg
 title: Hummelberg    #optional
 max_items: 9         #optional standard 10
+show_title: false    #optional, blendet die Überschrift komplett aus
 ```
 
 ## Lizenz
